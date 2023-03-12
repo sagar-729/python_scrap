@@ -1,6 +1,5 @@
-def add(a , b):
-    print(a + b)
+import random                                                                                                           # Module (this is a file , where some commonly used utility python code written by an engineer is stored/written)
 
-
-add(10, 20)
-add(10, 200)
+for x in range(100):
+    result = random.randint(0, 5)
+    print(result)
