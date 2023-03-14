@@ -1,6 +1,7 @@
-file = open("demo.txt", 'w')
+file = open("demo.txt", 'r')                                                                                            # read only
 
-# do something with file
+content = file.read()
+print(content)
 
 # make sure to close the file
 file.close()
