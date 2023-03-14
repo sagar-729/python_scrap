@@ -1,8 +1,6 @@
-try:
-    a = 20
-    b = 0
-    print(a / b)
-except ZeroDivisionError:
-    print('There is divide by zero error')
-finally:
-    print("this is going to print , no matter what.")
+file = open("demo.txt", 'w')
+
+# do something with file
+
+# make sure to close the file
+file.close()
