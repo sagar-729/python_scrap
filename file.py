@@ -8,7 +8,7 @@ numbers = {
     4 : "Four"
 }
 
-print(numbers[5])                                                                                                       # Error :- Get keyerror at this line . Code below this line donot execute.
+print(numbers.get(5, "Key Not Found"))                                                                                                       # Perfectly Fine.
 
 people = {
     "John" : 21,
@@ -16,6 +16,6 @@ people = {
     "Ram" : 27
 }
 
-name = "Ram"
+name = "Ramu"
 
-print("Age of " + name + " is "+  str(people[name]))
+print("Age of " + name + " is "+  str(people.get(name, "Not Found.")))                                                  # Applause - We are not getting any KeyERROR .
