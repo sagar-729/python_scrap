@@ -1,13 +1,10 @@
 # creating infrastructure for our new branch project
 
-fruits = "Apple" , "Mango" , "Grapes"
+numbers = [0, 111, 222, 333, 444, 555, 666, 777]
 
-print(fruits)                                                                                                           # it is tuple printed in console
+print(numbers)
+print(numbers[1:6])                                                                                                     # Returns a List
+print(numbers[3:])                                                                                                      # Returns Right Hand Side List Items. bcoz 3 index is mid of list.
 
-# fruits[0] = "Ananasa"
-# tuple donot support assignment
-
-fruits2 = fruits + ("Ananansa", "Apple", )                                                                              # new tuple can be form using only tuples. There may be repeatition in the items.
-
-print(fruits2)
-
+print(numbers[1:7:2])                                                                                                   # Skip (2-1) digit inbetween
+print(numbers[::3])                                                                                                     # Return Full List with gap of (3-1=2)
