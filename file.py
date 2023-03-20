@@ -1,21 +1,13 @@
 # creating infrastructure for our new branch project
-# creating infrastructure for our new branch project
 
-numbers = {
-    1 : "One",
-    2 : "Two",
-    3 : "Three",
-    4 : "Four"
-}
+fruits = "Apple" , "Mango" , "Grapes"
 
-print(numbers.get(5, "Key Not Found"))                                                                                                       # Perfectly Fine.
+print(fruits)                                                                                                           # it is tuple printed in console
 
-people = {
-    "John" : 21,
-    "Shyam" : 8,
-    "Ram" : 27
-}
+# fruits[0] = "Ananasa"
+# tuple donot support assignment
 
-name = "Ramu"
+fruits2 = fruits + ("Ananansa", "Apple", )                                                                              # new tuple can be form using only tuples. There may be repeatition in the items.
 
-print("Age of " + name + " is "+  str(people.get(name, "Not Found.")))                                                  # Applause - We are not getting any KeyERROR .
+print(fruits2)
+
