@@ -1,10 +1,17 @@
 # creating infrastructure for our new branch project
 
-numbers = [0, 111, 222, 333, 444, 555, 666, 777]
+# Rules for a list
+list_squares = [x**2 for x in range(10)]
 
-print(numbers)
-print(numbers[1:6])                                                                                                     # Returns a List
-print(numbers[3:])                                                                                                      # Returns Right Hand Side List Items. bcoz 3 index is mid of list.
+print(list_squares)
 
-print(numbers[1:7:2])                                                                                                   # Skip (2-1) digit inbetween
-print(numbers[::3])                                                                                                     # Return Full List with gap of (3-1=2)
+list_cubes = [x**3 for x in range(10)]
+
+print(list_cubes)
+
+# conditional
+list_squares = [x**2 for x in range(10) if x % 2 == 0]                                                                  # Condition in the result of the rule
+print("Even Squares only - " + str(list_squares))
+
+list_cubes = [x**3 for x in range(10) if x % 2 == 0]                                                                    # IF condition in the result of rule.
+print("Even Cubes only - " + str(list_cubes))
